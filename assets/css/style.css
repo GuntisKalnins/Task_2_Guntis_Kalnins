@@ -1,24 +1,21 @@
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   src: url("../fonts/Oswald/Oswald-VariableFont_wght.ttf");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
-
 * {
   background: #FFFFFF;
 }
@@ -33,14 +30,12 @@ html {
 }
 
 #to-top {
-  position: -webkit-sticky;
   position: sticky;
   top: 90%;
   left: 80%;
   z-index: 2;
   display: none;
 }
-
 #to-top img {
   width: 60px;
   height: 60px;
@@ -58,16 +53,13 @@ button, .navbar-toggler {
   padding: 0;
   margin-left: 1.2rem;
 }
-
 .navbar a img {
   width: 78px;
   height: 49px;
 }
-
 .navbar button {
   padding: 0.4rem 1.3rem 0.2rem;
 }
-
 .navbar :after {
   content: " ";
   display: block;
@@ -88,7 +80,6 @@ button, .navbar-toggler {
 .video-container {
   position: relative;
 }
-
 .video-container img {
   width: 100%;
   height: auto;
@@ -100,8 +91,7 @@ button, .navbar-toggler {
   position: absolute;
   top: 45%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border-radius: 50%;
 }
 
@@ -109,7 +99,7 @@ button, .navbar-toggler {
 * For info area 
 */
 .text-area {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 12px;
   text-align: center;
   line-height: 15px;
@@ -122,16 +112,13 @@ button, .navbar-toggler {
 .picture-container {
   position: relative;
 }
-
 .picture-container .sm-content {
   width: 100%;
   height: 50%;
 }
-
 .picture-container .bottom-pics {
   height: 90%;
 }
-
 .picture-container .anda-format {
   height: 100%;
 }
@@ -162,7 +149,7 @@ button, .navbar-toggler {
 * links
 */
 .btn-format {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 18px;
   line-height: 21.94px;
   background-color: #FFA800;
@@ -173,22 +160,16 @@ button, .navbar-toggler {
 
 .link-format {
   padding-top: 6.5rem;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-size: 18px;
   line-height: 26.68px;
-  color: #2f4858;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  color: rgb(47, 72, 88);
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
-
 .link-format h5 {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -203,10 +184,10 @@ button, .navbar-toggler {
 * Question form
 */
 .form-text {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-size: 24px;
   line-height: 22px;
-  color: #2f4858;
+  color: rgb(47, 72, 88);
   padding-top: 2.5rem;
   padding-bottom: 2.3rem;
 }
@@ -219,25 +200,13 @@ button, .navbar-toggler {
   width: 95%;
   background-color: rgba(196, 196, 196, 0.4);
   border-color: rgba(196, 196, 196, 0.4);
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-size: 14px;
   border-radius: 6px;
 }
 
-#FormControl ::-webkit-input-placeholder {
-  color: #2f4858;
-}
-
-#FormControl :-ms-input-placeholder {
-  color: #2f4858;
-}
-
-#FormControl ::-ms-input-placeholder {
-  color: #2f4858;
-}
-
 #FormControl ::placeholder {
-  color: #2f4858;
+  color: rgb(47, 72, 88);
 }
 
 #FormControlQuest {
@@ -247,9 +216,9 @@ button, .navbar-toggler {
 .text-aligne {
   padding-left: 9px;
   padding-bottom: 10px;
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-size: 12px;
-  color: #2f4858;
+  color: rgb(47, 72, 88);
   text-align: left;
   line-height: 14.63px;
 }
@@ -264,9 +233,9 @@ button, .navbar-toggler {
 }
 
 #checkLabel {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   font-size: 12px;
-  color: #2f4858;
+  color: rgb(47, 72, 88);
   text-align: left;
   line-height: 15px;
   padding-top: 5px;
@@ -276,7 +245,7 @@ button, .navbar-toggler {
   margin-top: 41px;
   margin-right: 10px;
   padding: 0.8rem 2.9rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 /*
@@ -286,55 +255,44 @@ button, .navbar-toggler {
   margin-top: 40px;
   position: relative;
 }
-
 .sponsor-format .backgroung-img {
   width: 100%;
   height: 395px;
 }
-
 .sponsor-format h3 {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #FFCB66;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-size: 24px;
   line-height: 35.57px;
   top: 25%;
   left: 50%;
 }
-
 .sponsor-format #teikumslogo {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #FFCB66;
   top: 51%;
   left: 27%;
 }
-
 .sponsor-format #semlogo {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #FFCB66;
   top: 51%;
   left: 73%;
 }
-
 .sponsor-format #citylogo {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #FFCB66;
   top: 72%;
   left: 27%;
 }
-
 .sponsor-format #linearlogo {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-color: #FFCB66;
   top: 74%;
   left: 73%;
@@ -344,7 +302,7 @@ button, .navbar-toggler {
 * footer
 */
 footer {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .footer-img {
@@ -358,16 +316,14 @@ footer {
   position: relative;
   margin-top: -2px;
 }
-
 .footer #GoldenV2Logo {
   position: absolute;
   top: 9%;
   left: 20px;
-  background-color: #2f4858;
+  background-color: rgb(47, 72, 88);
 }
-
 .footer h4 {
-  background-color: #2f4858;
+  background-color: rgb(47, 72, 88);
   color: #FFFFFF;
   position: absolute;
   margin-top: 3px;
@@ -375,24 +331,21 @@ footer {
   top: 35%;
   font-size: 18px;
 }
-
 .footer #footer-contact {
-  background-color: #2f4858;
+  background-color: rgb(47, 72, 88);
   color: #FFFFFF;
   position: absolute;
   left: 6%;
   top: 46%;
 }
-
 .footer h6 {
-  background-color: #2f4858;
+  background-color: rgb(47, 72, 88);
   color: #FFFFFF;
   font-size: 12px;
   line-height: 18px;
 }
-
 .footer h5 {
-  background-color: #2f4858;
+  background-color: rgb(47, 72, 88);
   color: #FFFFFF;
   position: absolute;
   font-size: 14px;
@@ -400,35 +353,30 @@ footer {
   font-weight: 700;
   line-height: 17px;
 }
-
 .footer a {
   text-decoration: none;
 }
-
 .footer .soc-icon {
-  background-color: #2f4858;
+  background-color: rgb(47, 72, 88);
   color: #FFFFFF;
   position: absolute;
   top: 74%;
   left: 6%;
 }
-
 .footer .soc-icon img {
-  background-color: #2f4858;
+  background-color: rgb(47, 72, 88);
   color: #FFFFFF;
   margin-right: 30px;
 }
-
 .footer #trademark {
-  background-color: #2f4858;
+  background-color: rgb(47, 72, 88);
   color: #FFFFFF;
   position: absolute;
   left: 6%;
   top: 86.5%;
 }
-
 .footer p {
-  background-color: #2f4858;
+  background-color: rgb(47, 72, 88);
   color: #FFFFFF;
   font-size: 11px;
   line-height: 13px;
@@ -439,6 +387,7 @@ footer {
   #to-top {
     left: 85%;
   }
+
   .navbar {
     height: 71px;
     margin-bottom: 12px;
@@ -458,44 +407,46 @@ footer {
     height: 22px;
     bottom: -33px;
   }
+
   /*
-    * "video player"
-    */
+  * "video player"
+  */
   .video-container img {
     height: 395px;
   }
+
   .video-container #videoPlayerBtn {
     width: 86px;
     height: 83px;
   }
+
   /*
-    * For info area 
-    */
+  * For info area 
+  */
   .text-area {
-    font-family: 'Montserrat-Regular';
+    font-family: "Montserrat-Regular";
     font-size: 18px;
     line-height: 21.94px;
     padding: 8.1rem 5rem 7.6rem 5rem;
   }
+
   /*
-    * picture container
-    */
+  * picture container
+  */
   .picture-container .bottom-pics {
     height: 100%;
   }
+
   .picture-container:after {
     bottom: -1%;
   }
+
   /*
-    * links
-    */
+  * links
+  */
   .link-format {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
     padding-top: 9.2rem;
     padding-left: 0.5rem;
   }
@@ -511,15 +462,17 @@ footer {
   .link-format .link-container-lower {
     padding-right: 0.5rem;
   }
+
   /*
-    * Question form
-    */
+  * Question form
+  */
   .form-text {
     font-size: 30px;
     line-height: 44.46px;
     padding-top: 4rem;
     padding-bottom: 3.5rem;
   }
+
   .field-format {
     margin-left: 20px;
     margin-right: 20px;
@@ -528,32 +481,38 @@ footer {
     width: 88%;
     font-size: 18px;
   }
+
   #FormControlQuest {
     height: 230px;
     margin-bottom: 0.6rem;
   }
+
   #FormControlName, #FormControlEmail {
     width: 42.5%;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
+
   .text-aligne {
     padding-left: 2.8rem;
     font-size: 14px;
     line-height: 17.07px;
   }
+
   #FormCheck {
     margin-right: 20px;
     padding-top: 5px;
   }
+
   #checkLabel {
     font-size: 14px;
-    color: #2f4858;
+    color: rgb(47, 72, 88);
     text-align: left;
     line-height: 17.07px;
     padding: 0;
     width: 95%;
   }
+
   #form-submit-btn {
     margin-top: 2.6rem;
     margin-right: 0;
@@ -562,9 +521,10 @@ footer {
     font-size: 24px;
     line-height: 29.26px;
   }
+
   /*
-    * Sponsors
-    */
+  * Sponsors
+  */
   .sponsor-format .backgroung-img {
     width: 100%;
     height: 250px;
@@ -590,12 +550,14 @@ footer {
     top: 55%;
     left: 87%;
   }
+
   /*
-    * footer
-    */
+  * footer
+  */
   .footer-img {
     height: 364px;
   }
+
   .footer #GoldenV2Logo {
     width: 162px;
     top: 17%;
@@ -634,12 +596,12 @@ footer {
     margin-top: 0.5rem;
   }
 }
-
 @media (min-width: 1200px) {
   #to-top {
     top: 95%;
     left: 90%;
   }
+
   .navbar {
     height: 92px;
   }
@@ -651,7 +613,7 @@ footer {
     height: 99px;
   }
   .navbar .navbar-nav {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: 18px;
     line-height: 22px;
     margin-left: 2.5rem;
@@ -665,24 +627,27 @@ footer {
     height: 36px;
     bottom: -45px;
   }
+
   /*
-    * Video player
-    */
+  * Video player
+  */
   .video-container img {
     width: 100%;
     height: 665px;
   }
+
   /*
-    * For info area 
-    */
+  * For info area 
+  */
   .text-area {
     font-size: 18px;
     line-height: 21.94px;
     padding: 8rem 22rem 9rem 22rem;
   }
+
   /*
-    * picture container
-    */
+  * picture container
+  */
   .picture-container .bottom-pics {
     height: 80%;
   }
@@ -692,12 +657,14 @@ footer {
   .picture-container .anda-format {
     height: 80%;
   }
+
   .picture-container::after {
     bottom: 19%;
   }
+
   /*
-    * links
-    */
+  * links
+  */
   .link-format {
     padding-top: 7.3rem;
     padding-left: 11rem;
@@ -713,20 +680,24 @@ footer {
   .link-format .link-container-lower {
     padding-right: 8rem;
   }
+
   /*
-    * Question form
-    */
+  * Question form
+  */
   .field-format {
     height: 43px;
     width: 55%;
     font-size: 18px;
   }
+
   #FormControlQuest {
     height: 232px;
   }
+
   #FormControlName, #FormControlEmail {
     width: 26.5%;
   }
+
   .text-aligne {
     padding-left: 15.8rem;
     padding-top: 0;
@@ -734,16 +705,19 @@ footer {
     font-size: 18px;
     line-height: 21.94px;
   }
+
   #checkLabel {
     width: 65%;
   }
+
   #form-submit-btn {
     margin-top: 1rem;
     margin-bottom: 8rem;
   }
+
   /*
-    * Sponsors
-    */
+  * Sponsors
+  */
   .sponsor-format .backgroung-img {
     height: 450px;
   }
@@ -771,12 +745,14 @@ footer {
     top: 54%;
     left: 85%;
   }
+
   /*
-    * footer
-    */
+  * footer
+  */
   .footer-img {
     height: 364px;
   }
+
   .footer #GoldenV2Logo {
     width: 187px;
     top: 15%;
@@ -798,22 +774,22 @@ footer {
     height: 36px;
   }
   .footer .footer-nav {
-    background-color: #2f4858;
+    background-color: rgb(47, 72, 88);
     color: #FFFFFF;
     position: absolute;
     top: 13%;
     right: 61%;
   }
   .footer .footer-nav a {
-    background-color: #2f4858;
+    background-color: rgb(47, 72, 88);
     color: #FFFFFF;
     margin-bottom: 0.4rem;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-size: 18px;
     line-height: 22px;
   }
   .footer .footer-details {
-    background-color: #2f4858;
+    background-color: rgb(47, 72, 88);
     color: #FFFFFF;
     position: absolute;
     top: 13%;
@@ -822,8 +798,8 @@ footer {
     line-height: 22px;
   }
   .footer .footer-details strong {
-    background-color: #2f4858;
-    font-family: 'Montserrat';
+    background-color: rgb(47, 72, 88);
+    font-family: "Montserrat";
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -840,4 +816,5 @@ footer {
     margin-right: 51rem;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
