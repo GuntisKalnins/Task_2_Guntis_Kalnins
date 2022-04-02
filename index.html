@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/scss/style.css">  
+    <script src="./assets/js/theme.js" defer></script>
+    <title>SĀKUMLAPA</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/Intersect.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light p-0">
+            <a class="navbar-brand" href="#"><img src="./assets/img/BlackLogo-3.png" alt="company logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="d-none d-sm-block d-sm-none d-md-block navbar-toggler-icon"></span><img class="d-md-none d-lg-block d-lg-none d-xl-block d-xl-none" src="./assets/img/Vector.png" alt="menu icon">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Ideja</a>
+                    <a class="nav-item nav-link" href="#">Piesaki Sapni</a>
+                    <a class="nav-item nav-link" href="#">Uzņēmējiem</a>
+                    <a class="nav-item nav-link" href="#">Sapņu banka</a>
+                    <a class="nav-item nav-link" href="#">Sapņus atbalsta</a>
+                    <a class="nav-item nav-link" href="#">99 Iedvesmas stāsti</a>
+                    <a class="nav-item nav-link" href="#">LV</a>
+                </div>
+            </div>
+        </nav>          
+    </header> 
+    <!--video player-->   
+    <div class="video-container ">   
+        <img src="./assets/img/Sparkle-Video-1.png" alt="Sparkle Video">
+        <button ><img id="videoPlayerBtn" src="./assets/img/Play-btn.png" alt="play button"></button>             
+    </div> 
+    <!--info area-->   
+    <div class="text-area">
+        <p>SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. 
+            Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.
+        Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.</p>
+    </div>
+    <!--picture container-->    
+    <div class="container-fluid picture-container">
+        <div class="row pt-2">
+            <div class="sm-con col-5 col-md-3 order-md-3 p-0">
+                <img class=" sm-content" src="./assets/img/Brinuma_meita-15.png" alt="Brinuma meita">
+                <img class=" sm-content" src="./assets/img/Alina_1_1.png" alt="Alina">  
+            </div>
+            <div class="col-7 col-md-3 order-md-4 p-0">
+                <img class="w-100 anda-format" src="./assets/img/Anda_2_1.png"  alt="Anda">
+            </div>        
+            <div class="col-6 col-md-3 order-md-1 p-0">
+                <img class="w-100 bottom-pics" src="./assets/img/Zanda_1.png" alt="Zanda">                
+            </div>
+            <div class="col-6 col-md-3 order-md-2 p-0">
+                <img class="w-100 bottom-pics" src="./assets/img/Sibilla_4.png" alt="Sibilla">
+            </div>                     
+        </div>               
+    </div>    
+    <!--links-->
+    <div class="link-format">
+        <div class="link-container">
+            <h5 id="link-text-1" class="link-text">VĒLIES PIEPILDĪT SAVU SAPNI?</h5>
+            <button class="btn btn-format rounded-pill btn-lg" role="button">Sapņotājiem</button>
+        </div>      
+        <div class="link-container-lower">
+            <h5 id="link-text-2" class="link-text lower-link-text">VĒLIES PALĪDZĒT KĀDĀM PIEPILDĪT SAPNI?</h5>
+            <button class="btn btn-format rounded-pill btn-lg" role="button">Uzņēmējiem</button>
+        </div>      
+    </div>    
+    <!--Question form-->
+    <div class="container flex-column text-center">
+        <label class="form-text">SAZINĀTIES AR MUMS</label>
+        <form id="FormControl" action="get">
+            <input type="text" class="form-control field-format d-md-inline-flex" id="FormControlName" placeholder="Vārds, Uzvārds*" required>
+            <input type="email" class="form-control field-format d-md-inline-flex" id="FormControlEmail" placeholder="E-pasts*" required>
+            <input type="text" class="form-control field-format d-md-inline-flex" id="FormControlPhone" placeholder="Telefons*" required>
+            <textarea class="form-control field-format d-md-inline-flex" id="FormControlQuest" placeholder="Jautājums, vai komentārs*" required></textarea>
+            <span class="d-flex text-aligne">* obligāti aizpildāmie lauki</span>
+            <div class="d-flex text-aligne">
+                <div>
+                    <input type="checkbox" class="form-check-input" id="FormCheck" required>              
+                </div>
+                <div>
+                    <label class="form-check-label" for="FormCheck" id="checkLabel">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</label>
+                </div>   
+            </div>            
+            <button type="submit" class="btn btn-format rounded-pill btn-lg" id="form-submit-btn">Sūtīt</button>
+        </form>
+    </div>
+    <!--sponsors-->
+    <div class="sponsor-format text-center">
+        <img class="backgroung-img" src="./assets/img/Union.png" alt="">       
+        <h3>ATBALSTĪTĀJI</h3>
+        <a href=""><img id="teikumslogo" src="./assets/img/getlogo_1.png" alt="teikums logo"></a>
+        <a href=""><img id="semlogo" src="./assets/img/Group.png" alt="sem logo"></a>
+        <a href=""><img id="citylogo" src="./assets/img/Citybee-logo1.png" alt="citybee logo"></a>
+        <a href=""><img id="linearlogo" src="./assets/img/logo1_1.png" alt="linearis logo"></a>         
+    </div>
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <img class="footer-img" src="./assets/img/Subtract.png" alt="footer background image">
+            <img id="GoldenV2Logo" src="./assets/img/GoldenV2Logo_3.png" alt="golden logo">            
+            <div>
+                <h4 id="footer-name">Juris Gogulis</h4>
+            </div>                
+            <div id="footer-contact" >
+                <h6>juris.gogulis@sparkleheart.org</h6>
+                <h6>+37126890034</h6>
+                <h6>Biķernieku iela 24a - 5, LV-1006</h6>
+                <a href=""><h5>Skatīt rekvizītus</h5></a>
+            </div>
+            <div class="soc-icon">
+                <img src="./assets/img/soc2.png" alt="facebook icon">
+                <img src="./assets/img/soc1.png" alt="instagram icon">
+            </div>  
+            <div class="navbar-nav footer-nav d-none d-xl-block">
+                <a class="nav-item nav-link active" href="#">Ideja</a>
+                <a class="nav-item nav-link" href="#">Piesaki Sapni</a>
+                <a class="nav-item nav-link" href="#">Uzņēmējiem</a>
+                <a class="nav-item nav-link" href="#">Sapņu banka</a>
+                <a class="nav-item nav-link" href="#">Sapņus atbalsta</a>
+                <a class="nav-item nav-link" href="#">Iedvesmas stāsti</a>
+            </div>
+            <div class="footer-details d-none d-xl-block">
+                <p><strong>Biedrība SparkleHeart</strong></p>
+                <p>Reģistrācijas nr. 40008293119</p>
+                <p>Banka: SWEDBANK A/S</p>
+                <p>LV52HABA0551047652465</p>
+            </div>
+            <div class="d-md-inline-flex" id="trademark">
+                <p class="bot-p">© SparkleHeart 2020. Visas tiesības aizsargātas.</p>
+                <p> Privātuma politika</p>
+            </div>
+        </div>
+    </footer>        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

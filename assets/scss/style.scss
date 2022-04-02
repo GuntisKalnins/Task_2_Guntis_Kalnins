@@ -1,0 +1,756 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald/Oswald-VariableFont_wght.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@mixin sponsor-location {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #FFCB66;
+}
+@mixin footer-info {
+    background-color: $font-color;
+    color: $main-bg-color;
+    position: absolute;
+}
+
+$main-bg-color: #FFFFFF;
+$element-color:#FFA800;
+$font-color:rgba(47, 72, 88, 1);
+$form-color:rgba(196, 196, 196, 0.4);
+
+* {
+    background: $main-bg-color;    
+}
+
+button, .navbar-toggler{
+    border-style: none;
+}
+/*
+* navigation bar + ripped speration
+*/
+.navbar{
+    a{         
+        padding: 0;
+        margin-left: 1.2rem;
+        img{
+            width: 78px;
+            height: 49px;
+        }
+    }
+    button{
+        padding: 0.4rem 1.3rem 0.2rem;       
+    }
+    :after{
+        content:" ";
+        display:block;
+        width: 100%;
+        height: 16px;
+        background-image:url('../img/ripped_6_7.png');
+        background-repeat: round;
+        background-size: cover;
+        position:absolute;
+        bottom:-15px;
+        left:0;
+        z-index: 1;
+    }
+}
+/*
+* "video player"
+*/
+.video-container{
+    position:relative;
+    img{
+        width: 100%;
+        height: auto;    
+    }
+}
+#videoPlayerBtn {    
+    width: 50px;
+    height: 48.26px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+/*
+* For info area 
+*/
+.text-area {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;    
+    padding: 3.5rem 1rem 4rem 1rem;
+}
+/*
+* picture container
+*/
+.picture-container{
+    position:relative;
+
+    .sm-content{
+        width: 100%;
+        height: 50%;
+    }
+    .bottom-pics{
+        height: 90%;
+    }
+    .anda-format{
+        height: 100%;
+    }
+}
+.picture-container:before{
+    content:" ";
+    width: 100%;
+    height: 30px;
+    display:block;
+    background-image:url('../img/ripped_6_7.png');
+    background-repeat: round;
+    background-size: cover;
+    position:absolute;
+    left:0;
+}
+.picture-container:after{
+    content:" ";
+    display:block;
+    height: 25px;
+    background-image:url('../img/ripped_6_8.png');
+    position:absolute;
+    width:100%;
+    bottom:3%;
+}
+/*
+* links
+*/
+.btn-format{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 21.94px;
+    background-color: $element-color;
+    padding: 0.85rem 3.6rem;
+    color: $main-bg-color;
+    margin-bottom: 5rem;
+}
+.link-format{   
+    padding-top: 6.5rem;
+    font-family: 'Oswald';
+    font-size: 18px;
+    line-height: 26.68px;
+    color: $font-color;
+    display: flex;
+    flex-direction: column;
+    text-align: center;   
+    h5{
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        margin-left: 1rem;
+        padding-bottom: 1.4rem;   
+        padding-left: 1rem;
+        padding-right: 2rem; 
+    }    
+}
+/*
+* Question form
+*/
+.form-text{
+    font-family: 'Oswald';
+    font-size: 24px;
+    line-height: 22px;
+    color: $font-color;
+    padding-top: 2.5rem;
+    padding-bottom: 2.3rem;
+}
+.field-format{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    width: 95%;
+    background-color: $form-color;
+    border-color: $form-color;
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    border-radius: 6px;       
+}
+#FormControl{
+    ::placeholder{
+        color:  $font-color;;
+    } 
+}
+#FormControlQuest{
+    height: 150px;
+}
+.text-aligne{
+    padding-left: 9px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat-Regular';
+    font-size: 12px;
+    color: $font-color;
+    text-align: left;
+    line-height: 14.63px;
+}
+#FormCheck{
+    margin-right: 20px;
+    padding-top: 5px;
+    height: 16px;
+    width: 16px;
+    background-color: #E7E7E7;
+    border-color: #E7E7E7;;
+}
+#checkLabel{
+    font-family: 'Montserrat-Regular';
+    font-size: 12px;
+    color: $font-color;
+    text-align: left;
+    line-height: 15px;
+    padding-top: 5px;
+}
+#form-submit-btn{
+    margin-top: 41px;
+    margin-right: 10px;
+    padding: 0.8rem 2.9rem;
+    font-family: 'Montserrat';
+}
+/*
+* Sponsors
+*/
+.sponsor-format{
+    margin-top: 40px;
+    position: relative;
+    
+    .backgroung-img{
+        width: 100%;
+        height: 395px;        
+    }    
+    h3{
+        @include sponsor-location();
+        font-family: 'Oswald';
+        font-size: 24px;
+        line-height: 35.57px;
+        top: 25%;
+        left: 50%; 
+    }
+    #teikumslogo{
+        @include sponsor-location();
+        top: 51%;
+        left: 27%;
+    }
+    #semlogo{
+        @include sponsor-location();
+        top: 51%;
+        left: 73%;
+    }
+    #citylogo{
+        @include sponsor-location();
+        top: 72%;
+        left: 27%;
+    }
+    #linearlogo{
+        @include sponsor-location();
+        top: 74%;
+        left: 73%;
+    }  
+}
+/*
+* footer
+*/
+footer{
+    font-family:'Montserrat' ;
+}
+
+.footer-img{
+    position: relative;
+    background-color: #FFCB66;
+    width: 100%;
+    height: 483px;
+}
+.footer{
+    position: relative;
+    margin-top: -2px;
+    
+    #GoldenV2Logo{
+        position: absolute;
+        top: 9%;
+        left: 20px;
+        background-color: $font-color;
+    }
+    h4{
+        @include footer-info();
+        margin-top: 3px;
+        left: 6%;
+        top: 35%;
+        font-size: 18px;
+    }   
+    #footer-contact{
+        @include footer-info();
+        left: 6%;        
+        top: 46%;
+    }
+    h6{
+        background-color: $font-color;
+        color: $main-bg-color;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    h5{
+        @include footer-info();
+        font-size: 14px;            
+        margin-top: 2px;
+        font-weight: 700; 
+        line-height: 17px;      
+    }
+    a{
+        text-decoration: none;
+    }    
+    .soc-icon{
+        @include footer-info();
+        top: 74%;
+        left: 6%;       
+        img{
+            background-color: $font-color;
+            color: $main-bg-color;
+            margin-right: 30px;
+        }
+    } 
+    #trademark{
+        @include footer-info();
+        left: 6%;        
+        top: 86.5%;
+    }
+    p{
+        background-color: $font-color;
+        color: $main-bg-color;
+        font-size: 11px;
+        line-height: 13px;   
+        margin-bottom: 10px;    
+    }     
+}
+
+@media (min-width: 768px) {
+    .navbar{
+        height: 71px;   
+        margin-bottom: 12px;           
+        a{         
+            margin-left: 4em;
+            img{
+                width: 128px;
+                height: 82px;                
+            }
+        }   
+        button{
+            margin-right: 4rem;
+        }
+        :after{
+            content:" ";
+            height: 22px;
+            bottom:-33px;
+        }
+    }
+    /*
+    * "video player"
+    */
+    .video-container{        
+        img{
+            height: 395px;    
+        }
+    }  
+    .video-container{
+        #videoPlayerBtn {    
+            width: 86px;
+            height: 83px;        
+        }
+    }
+    /*
+    * For info area 
+    */
+    .text-area {
+        font-family: 'Montserrat-Regular';
+        font-size: 18px;
+        line-height: 21.94px;    
+        padding: 8.1rem 5rem 7.6rem 5rem;
+    }
+    /*
+    * picture container
+    */
+    .picture-container{
+        .bottom-pics{
+            height: 100%;
+        }
+    }
+    .picture-container:after{     
+        bottom:-1%;
+    }
+    /*
+    * links
+    */
+    .link-format{
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 9.2rem;  
+        padding-left: 0.5rem; 
+        h5{
+            width: 233px;
+            padding-bottom: 3rem; 
+            margin: 0;
+        } 
+        .lower-link-text{
+            padding-bottom: 4.7rem;
+            padding-right: 0; 
+
+        }
+        .link-container-lower{
+            padding-right: 0.5rem; 
+        }        
+    }  
+    /*
+    * Question form
+    */
+    .form-text{
+        font-size: 30px;
+        line-height: 44.46px;
+        padding-top: 4rem;
+        padding-bottom: 3.5rem;
+    }
+    .field-format{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        height: 40px;
+        width: 88%;
+        font-size: 18px;
+    }
+    #FormControlQuest{
+        height: 230px;
+        margin-bottom: 0.6rem;
+    }
+    #FormControlName, #FormControlEmail{
+        width: 42.5%;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .text-aligne{
+        padding-left: 2.8rem;
+        font-size: 14px;
+        line-height: 17.07px;
+    }
+    #FormCheck{
+        margin-right: 20px;
+        padding-top: 5px;
+    }
+    #checkLabel{
+        font-size: 14px;
+        color: $font-color;
+        text-align: left;
+        line-height: 17.07px;
+        padding:0;
+        width: 95%;
+    }
+    #form-submit-btn{
+        margin-top: 2.6rem;
+        margin-right: 0;
+        margin-bottom: 7.6rem;
+        padding: 1rem 3.8rem;
+        font-size: 24px;
+        line-height: 29.26px;       
+    }
+    /*
+    * Sponsors
+    */
+    .sponsor-format{        
+        .backgroung-img{
+            width: 100%;
+            height: 250px;        
+        }    
+        #teikumslogo{
+            width: 144px;
+            top: 55%;
+            left: 20%;
+        }
+        #semlogo{
+            width: 124px;
+            top: 55%;
+            left: 44%;
+        }
+        #citylogo{
+            width: 142px;
+            top: 55%;
+            left: 67%;
+        }
+        #linearlogo{
+            width: 49px;
+            height: 71px;
+            top: 55%;
+            left: 87%;
+        }  
+    }
+    /*
+    * footer
+    */   
+    .footer-img{
+        height: 364px;
+    }
+    .footer{
+        #GoldenV2Logo{
+            width: 162px;
+            top: 17%;
+            left: 80px;
+        }
+        h4{
+            left: 10%;
+            top: 69%;
+            font-size: 24px;
+            line-height: 29.26px;
+        }   
+        #footer-contact{
+            left: 53%;        
+            top: 30%;            
+        }
+        h6{
+            font-size: 18px;
+            line-height: 21.94px;
+            margin-top: 2px;
+            text-align: right;
+        }
+        h5{
+            font-size: 18px;            
+            line-height: 21.94px; 
+            padding-left: 8.4rem;
+        }         
+        .soc-icon{
+            top: 71%;
+            left: 80%;       
+        }  
+        p{
+            font-size: 16px;
+            line-height: 19.5px;   
+            margin-left: 2.1rem;
+            margin-right: 2.6rem;
+            margin-top: 0.5rem;
+        }     
+    }   
+}
+@media (min-width: 1200px) {
+    .navbar{
+        height: 92px;
+        a{
+            margin-left: 4rem;
+            img{
+                width: 159px;
+                height: 99px;
+            }
+        }
+        .navbar-nav{
+            font-family: 'Montserrat';
+            font-size: 18px;
+            line-height: 22px;      
+            margin-left: 2.5rem;      
+            a{
+                margin-left: 1.2rem;
+                margin-top: 2rem;
+                color: #060606;
+            }
+        }        
+        :after{
+            height: 36px;
+            bottom:-45px;
+        }
+    }
+    /*
+    * Video player
+    */
+    .video-container{
+        img{
+            width: 100%;
+            height: 665px;    
+        }
+    }   
+    /*
+    * For info area 
+    */
+    .text-area {
+        font-size: 18px;
+        line-height: 21.94px;    
+        padding: 8rem 22rem 9rem 22rem;
+    }
+    /*
+    * picture container
+    */
+    .picture-container{
+        .bottom-pics{
+            height: 80%;
+        }
+        .sm-content{
+            height: 40%;
+        }
+        .anda-format{
+            height: 80%;
+        }
+    }
+    .picture-container::after{
+        bottom:19%;
+    }    
+    /*
+    * links
+    */
+    .link-format{        
+        padding-top: 7.3rem;  
+        padding-left: 11rem; 
+        h5{
+            font-size: 24px;
+            width: 410px;
+        } 
+        .lower-link-text{
+            padding-bottom: 3rem;
+            width: 500px;
+        }
+        .link-container-lower{            
+            padding-right: 8rem; 
+        }        
+    }  
+    /*
+    * Question form
+    */
+    .field-format{
+
+        height: 43px;
+        width: 55%;
+        font-size: 18px;
+    }
+    #FormControlQuest{
+        height: 232px;
+    }
+    #FormControlName, #FormControlEmail{
+        width: 26.5%;
+    }
+    .text-aligne{
+        padding-left: 15.8rem;
+        padding-top: 0;
+        margin-bottom: 1.4rem;
+        font-size: 18px;
+        line-height: 21.94px;
+    }   
+    #checkLabel{
+        width: 65%;
+    }
+    #form-submit-btn{
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+    }
+    /*
+    * Sponsors
+    */
+    .sponsor-format{        
+        .backgroung-img{
+            height: 450px;        
+        }    
+        h3{
+            top:23%
+        }
+        #teikumslogo{
+            width: 241px;
+            top: 54%;
+            left: 21%;
+        }
+        #semlogo{
+            width: 204px;
+            top: 54%;
+            left: 44%;
+        }
+        #citylogo{
+            width: 238px;
+            top: 54%;
+            left: 67%;
+        }
+        #linearlogo{
+            width: 84px;
+            height: 120px;
+            top: 54%;
+            left: 85%;
+        }  
+    }
+    /*
+    * footer
+    */   
+    .footer-img{
+        height: 364px;
+    }
+    .footer{
+        #GoldenV2Logo{
+            width: 187px;
+            top: 15%;
+            left: 62px;
+        }
+        h4{
+            left: 84%;
+            top: 14%;
+        }   
+        #footer-contact{
+            left: 75%;        
+            top: 27.5%;            
+        }
+        .soc-icon{
+            top: 66%;
+            left: 89%;   
+            img{
+                height: 36px;
+            }    
+        }
+        .footer-nav{
+            @include footer-info();
+            top: 13%;
+            right:61%;
+            a{
+                background-color: $font-color;
+                color: #FFFFFF;
+                margin-bottom: 0.4rem;
+                font-family: 'Montserrat';
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+        .footer-details{
+            @include footer-info();
+            top: 13%;
+            right:30%;
+            font-size: 18px;
+            line-height: 22px;
+            strong{
+                background-color: $font-color;
+                font-family: 'Montserrat';
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+            }         
+            p{
+                margin-bottom: 0.9rem;
+            }          
+        }    
+        h5{
+            display: none;
+        }  
+        .bot-p{
+            margin: 0;
+            width: 220px;
+            margin-right: 51rem;
+        }    
+    }   
+}
+
