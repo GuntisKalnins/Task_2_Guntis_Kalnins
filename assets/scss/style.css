@@ -23,6 +23,30 @@
   background: #FFFFFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#wrapper {
+  position: relative;
+  margin-top: auto;
+}
+
+#to-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90%;
+  left: 80%;
+  z-index: 2;
+  display: none;
+}
+
+#to-top img {
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+}
+
 button, .navbar-toggler {
   border-style: none;
 }
@@ -49,7 +73,7 @@ button, .navbar-toggler {
   display: block;
   width: 100%;
   height: 16px;
-  background-image: url("../img/ripped_6_7.png");
+  background-image: url("../img/Top.png");
   background-repeat: round;
   background-size: cover;
   position: absolute;
@@ -412,6 +436,9 @@ footer {
 }
 
 @media (min-width: 768px) {
+  #to-top {
+    left: 85%;
+  }
   .navbar {
     height: 71px;
     margin-bottom: 12px;
@@ -609,6 +636,10 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  #to-top {
+    top: 95%;
+    left: 90%;
+  }
   .navbar {
     height: 92px;
   }
