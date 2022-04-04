@@ -42,25 +42,26 @@ html {
   border-radius: 20%;
 }
 
-#navbarNav {
+#navbarNav, .lang-select {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 18px;
   line-height: 21.94px;
   color: #000000;
 }
-#navbarNav a {
+#navbarNav a, .lang-select a {
   margin-bottom: 40px;
   color: #000000;
+  text-decoration: none;
 }
-#navbarNav a:focus {
+#navbarNav a:focus, .lang-select a:focus {
   font-weight: 600;
   text-decoration: underline;
   text-decoration-color: #FFA800;
   text-decoration-thickness: 3px;
 }
 
-#language-picker-select {
+.lang-select {
   margin-bottom: 40px;
 }
 
@@ -68,9 +69,6 @@ button, .navbar-toggler {
   border-style: none;
 }
 
-/*
-* navigation bar + ripped speration
-*/
 .navbar a {
   padding: 0;
   margin-left: 1.2rem;
@@ -80,7 +78,7 @@ button, .navbar-toggler {
   height: 49px;
 }
 .navbar button {
-  padding: 0.4rem 1.3rem 0.2rem;
+  margin-right: 1rem;
 }
 .navbar :after {
   content: " ";
@@ -469,7 +467,7 @@ footer {
   }
 
   .picture-container:before {
-    top: -1%;
+    top: -2%;
   }
 
   .picture-container:after {
