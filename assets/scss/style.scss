@@ -683,7 +683,9 @@ footer{
         }
     }
     .picture-container::before{
-        top:-2.5%;
+        top:-3%;
+        height: 50px;
+
     } 
     .picture-container::after{
         bottom:3%;
