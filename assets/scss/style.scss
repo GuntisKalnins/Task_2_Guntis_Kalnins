@@ -141,19 +141,24 @@ button, .navbar-toggler{
 */
 .picture-container{
     position:relative;
-
+  
     .sm-content{
         width: 100%;
         height: 48%;
     }
     .bottom-pics{
         margin-top: -5%;
-        height: 95%;
     }
     .anda-format{
-        height: 96%;
         width: 100%
-    }     
+    }    
+    .lb-con{
+        width: 52%;
+        height: 190px;
+    } 
+    .rb-con{
+        width: 48%
+    }
 }
 .picture-container:before{
     content:" ";
@@ -174,6 +179,7 @@ button, .navbar-toggler{
     position:absolute;
     width:100%;
     bottom:3%;
+    left: 0;
 }
 /*
 * links
@@ -188,7 +194,7 @@ button, .navbar-toggler{
     margin-bottom: 5rem;
 }
 .link-format{   
-    padding-top: 7rem;
+    padding-top: 6.6rem;
     font-family: 'Oswald';
     font-size: 18px;
     line-height: 26.68px;
@@ -437,31 +443,63 @@ footer{
         font-family: 'Montserrat-Regular';
         font-size: 18px;
         line-height: 21.94px;    
-        padding: 8.1rem 5rem 8.5rem 5rem;
+        padding: 8.1rem 5rem 9rem 5rem;
     }
     /*
     * picture container
     */
-    .picture-container{
-        .bottom-pics{
-            height: 100%;
+    .picture-container{    
+        .sm-con{
+            width:22%;
+            img{
+                height: 99px;
+            }
         }
-    }
+        .anda-container{
+            width: 29.5%;
+            img{
+                height: 190px;
+            }
+        }
+        .lb-con{
+            width: 24%;
+            
+        }  
+        .rb-con{
+            width: 24.5%;
+            img{
+                margin-top: 0.2rem;
+                height: 200px;
+            }
+        }         
+    } 
     .picture-container:before{     
         top:-2%;
     }
     .picture-container:after{     
         bottom:-1%;
     }
-    .sm-con{
-        width:22%;
-    }
-    .anda-container{
-        width: 30%;
-    }
-    .lb-con, .rb-con{
-        width: 24%;
-    }   
+    /*.picture-container{
+        position:relative;
+      
+        .sm-content{
+            width: 100%;
+            height: 48%;
+        }
+        .bottom-pics{
+            margin-top: -5%;
+        }
+        .anda-format{
+            width: 100%
+        }    
+        .lb-con{
+            width: 52%;
+            height: 190px;
+        } 
+        .rb-con{
+            width: 48%
+        }
+    } 
     /*
     * links
     */
